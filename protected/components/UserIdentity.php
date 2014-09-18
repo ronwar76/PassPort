@@ -20,7 +20,7 @@ class UserIdentity extends CUserIdentity
 		$record=Users::model()->findByAttributes(array('username'=>$this->username));
 		if($record===null)
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		else if($record->password!==$this->password)
+		else if($record->password!==crypt($this->password,'salt'))
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		else 
 		{
