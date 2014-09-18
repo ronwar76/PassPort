@@ -182,3 +182,71 @@ Stack trace:
 REQUEST_URI=/PassPort.net/users/admin
 HTTP_REFERER=http://localhost/PassPort.net/users
 ---
+2014/09/18 16:46:14 [error] [php] Use of undefined constant LoginForm - assumed 'LoginForm' (C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\views\site\index.php:7)
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CWebApplication->run()
+REQUEST_URI=/PassPort.net/site/index
+in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\views\site\index.php (7)
+in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\controllers\SiteController.php (32)
+in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php (13)
+2014/09/18 16:54:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('passwords/admin')
+#9 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PassPort.net/passwords/admin
+HTTP_REFERER=http://localhost/PassPort.net/passwords
+---
+2014/09/18 16:54:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('passwords/admin')
+#9 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PassPort.net/passwords/admin
+HTTP_REFERER=http://localhost/PassPort.net/passwords
+---
+2014/09/18 16:55:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('passwords/admin')
+#9 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PassPort.net/passwords/admin
+HTTP_REFERER=http://localhost/PassPort.net/passwords/create
+---
