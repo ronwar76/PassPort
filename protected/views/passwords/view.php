@@ -1,6 +1,13 @@
 <?php
 /* @var $this PasswordsController */
 /* @var $model Passwords */
+$record = Users::model()->findByAttributes(array('username'=>Yii::app()->user->name));
+$dataProvider=new CActiveDataProvider('Passwords',array(
+		'criteria'=>array(
+				'condition'=>'users_id='.$record->id,
+		)
+));
+
 
 $this->breadcrumbs=array(
 	'Passwords'=>array('index'),

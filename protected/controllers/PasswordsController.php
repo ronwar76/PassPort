@@ -32,12 +32,12 @@ class PasswordsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('admin','create','update','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'actions'=>array(),
+				'users'=>array('admin2'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -144,7 +144,7 @@ class PasswordsController extends Controller
 	 * Manages all models.
 	 */
 	public function actionAdmin()
-	{
+	{		
 		$model=new Passwords('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Passwords']))

@@ -85,7 +85,8 @@ class Passwords extends CActiveRecord
 	public function search()
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
-
+		$record = Users::model()->findByAttributes(array('username'=>Yii::app()->user->name));
+		
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
@@ -94,7 +95,7 @@ class Passwords extends CActiveRecord
 		$criteria->compare('password',$this->password,true);
 		$criteria->compare('DateCreated',$this->DateCreated,true);
 		$criteria->compare('LastUpdate',$this->LastUpdate,true);
-		$criteria->compare('users_id',$this->users_id);
+		$criteria->compare('users_id',$record->id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

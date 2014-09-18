@@ -37,7 +37,7 @@ class EmailsController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('admin2'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -122,7 +122,14 @@ class EmailsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Emails');
+		$record = Users::model()->findByAttributes(array('username'=>Yii::app()->user->name));
+		$dataProvider=new CActiveDataProvider('Emails',array(
+				'criteria'=>array(
+						'condition'=>'users_id='.$record->id,
+				)
+		));
+		
+		//$dataProvider=new CActiveDataProvider('Emails');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

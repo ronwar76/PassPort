@@ -32,12 +32,12 @@ class UsersController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'actions'=>array('admin','create','delete'),
+				'users'=>array('admin2'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -124,7 +124,14 @@ class UsersController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Users');
+		$record = Users::model()->findByAttributes(array('username'=>Yii::app()->user->name));
+		$dataProvider=new CActiveDataProvider('Users',array(
+				'criteria'=>array(
+						'condition'=>'id='.$record->id,
+				)
+		));
+		
+		//$dataProvider=new CActiveDataProvider('Users');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
