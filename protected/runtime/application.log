@@ -1,0 +1,105 @@
+2014/09/18 13:38:53 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showscriptname" is not defined.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\YiiBase.php(220): CComponent->__set('showscriptname', false)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/PassPort.net/index.php/site/login
+HTTP_REFERER=http://localhost/PassPort.net/index.php/site/contact
+---
+2014/09/18 14:16:08 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showscriptname" is not defined.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\YiiBase.php(220): CComponent->__set('showscriptname', false)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/PassPort.net/index.php/site/login
+HTTP_REFERER=http://localhost/PassPort.net/index.php/site/contact
+---
+2014/09/18 14:16:09 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showscriptname" is not defined.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\YiiBase.php(220): CComponent->__set('showscriptname', false)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/PassPort.net/index.php/site/login
+HTTP_REFERER=http://localhost/PassPort.net/index.php/site/contact
+---
+2014/09/18 14:17:35 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showscriptname" is not defined.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\YiiBase.php(220): CComponent->__set('showscriptname', false)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/PassPort.net/index.php/site/login
+HTTP_REFERER=http://localhost/PassPort.net/index.php/site/contact
+---
+2014/09/18 14:17:36 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showscriptname" is not defined.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\YiiBase.php(220): CComponent->__set('showscriptname', false)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/PassPort.net/index.php/site/login
+HTTP_REFERER=http://localhost/PassPort.net/index.php/site/contact
+---
+2014/09/18 14:17:38 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showscriptname" is not defined.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\YiiBase.php(220): CComponent->__set('showscriptname', false)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/PassPort.net/index.php/site/login
+HTTP_REFERER=http://localhost/PassPort.net/index.php/site/contact
+---
+2014/09/18 14:26:24 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showscriptname" is not defined.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\YiiBase.php(220): CComponent->__set('showscriptname', false)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/PassPort.net/index.php/site/login
+HTTP_REFERER=http://localhost/PassPort.net/index.php/site/contact
+---
+2014/09/18 14:27:25 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showscriptname" is not defined.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\YiiBase.php(220): CComponent->__set('showscriptname', false)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/PassPort.net/index.php/site/login
+---
+2014/09/18 14:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "emails".' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(270): CController->missingAction('emails')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('emails')
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('site/emails')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/PassPort.net/site/emails
+---
