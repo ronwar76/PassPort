@@ -250,3 +250,87 @@ Stack trace:
 REQUEST_URI=/PassPort.net/passwords/admin
 HTTP_REFERER=http://localhost/PassPort.net/passwords/create
 ---
+2014/09/18 17:07:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('passwords/admin')
+#9 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PassPort.net/passwords/admin
+HTTP_REFERER=http://localhost/PassPort.net/passwords
+---
+2014/09/18 17:09:53 [error] [php] Undefined variable: url (C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\controllers\SiteController.php:97)
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CWebApplication->run()
+REQUEST_URI=/PassPort.net/site/login
+in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\controllers\SiteController.php (97)
+in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php (13)
+2014/09/18 17:15:24 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_id2' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `passwords` `t` WHERE users_id2.
+in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\views\passwords\index.php (20)
+in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\controllers\PasswordsController.php (134)
+in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php (13)
+2014/09/18 17:15:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users_id2' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `passwords` `t` WHERE users_id2' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\db\ar\CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#7 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#8 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\views\passwords\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CBaseController.php(126): require('C:\Users\User\D...')
+#12 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\User\D...', Array, true)
+#13 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\User\D...', Array, true)
+#14 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\protected\controllers\PasswordsController.php(134): CController->render('index', Array)
+#16 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\actions\CInlineAction.php(49): PasswordsController->actionIndex()
+#17 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('passwords')
+#27 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/PassPort.net/passwords
+HTTP_REFERER=http://localhost/PassPort.net/site/login
+---
+2014/09/18 17:16:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('passwords/admin')
+#9 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/PassPort.net/passwords/admin
+HTTP_REFERER=http://localhost/PassPort.net/passwords
+---

@@ -33,7 +33,7 @@ class Passwords extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('association, username, password, DateCreated, LastUpdate, users_id', 'required'),
+			array('association, username, password, DateCreated, users_id', 'required'),
 			array('users_id', 'numerical', 'integerOnly'=>true),
 			array('association, username, password', 'length', 'max'=>255),
 			// The following rule is used by search().

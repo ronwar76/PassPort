@@ -62,6 +62,7 @@ class PasswordsController extends Controller
 	 */
 	public function actionCreate()
 	{
+		$record = Users::model()->findByAttributes(array('username'=>Yii::app()->user->name));
 		$model=new Passwords;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -70,8 +71,13 @@ class PasswordsController extends Controller
 		if(isset($_POST['Passwords']))
 		{
 			$model->attributes=$_POST['Passwords'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			$model->users_id=$record->id;
+			$model->DateCreated = date_create()->format('Y-m-d H:i:s');
+			if($model->save()){
+//				$this->redirect(array('view','id'=>$model->id));
+				$url=$this->createUrl('//passwords');
+				$this->redirect($url);
+			}
 		}
 
 		$this->render('create',array(
@@ -122,7 +128,13 @@ class PasswordsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Passwords');
+		$record = Users::model()->findByAttributes(array('username'=>Yii::app()->user->name));
+		$dataProvider=new CActiveDataProvider('Passwords',array(
+				'criteria'=>array(
+					'condition'=>'users_id='.$record->id,
+		)
+		));
+		//$dataProvider=new CActiveDataProvider('Passwords');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

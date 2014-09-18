@@ -36,7 +36,7 @@
 		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
-
+<!-- 
 	<div class="row">
 		<?php echo $form->labelEx($model,'DateCreated'); ?>
 		<?php echo $form->textField($model,'DateCreated'); ?>
@@ -54,7 +54,7 @@
 		<?php echo $form->textField($model,'users_id'); ?>
 		<?php echo $form->error($model,'users_id'); ?>
 	</div>
-
+-->
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
