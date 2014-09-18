@@ -4,7 +4,13 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 <?php
+if(Yii::app()->user->isGuest){
 $this->redirect(array('login'));
+}
+else
+{
+	$this->redirect(array('site/page?view=about'));	
+}
 ?>
 <!--<h1>Securely Store & Manage All You Passwords</h1>
 

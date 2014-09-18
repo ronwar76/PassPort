@@ -1446,3 +1446,44 @@ Stack trace:
 REQUEST_URI=/PassPort.net/users/admin
 HTTP_REFERER=http://localhost/PassPort.net/users
 ---
+2014/09/18 20:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/PassPort.net/site/about
+HTTP_REFERER=http://localhost/PassPort.net/passwords
+---
+2014/09/18 20:00:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/PassPort.net/site/about
+HTTP_REFERER=http://localhost/PassPort.net/site/about
+---
+2014/09/18 20:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/about".' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('pages/about')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/PassPort.net/pages/about
+HTTP_REFERER=http://localhost/PassPort.net/site/about
+---
+2014/09/18 20:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\User\Desktop\DevServer\wamp\www\PassPort.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/PassPort.net/site/about
+---
